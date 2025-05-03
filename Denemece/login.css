@@ -1,0 +1,76 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.veteriner-resim, .hasta-resim {
+    object-fit: contain;
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+}
+
+.veteriner, .hasta {
+    display: grid;
+    grid-template-rows: 1fr 50px 1fr;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s, opacity 0.2s;
+    opacity: 0.8;
+}
+
+/* Varsayılan arka planlar */
+.veteriner {
+    background-color: rgba(170, 244, 255, 0.6);
+}
+
+.hasta {
+    background-color: rgba(159, 247, 150, 0.6);
+}
+
+/* Hover durumunda hem opacity hem arka plan rengi değişsin */
+.veteriner:hover {
+    opacity: 1;
+    background-color: rgba(170, 244, 255,1); /* açık pembe-mor arası */
+}
+
+.hasta:hover {
+    opacity: 1;
+    background-color: rgba(159, 247, 150, 1); /* daha parlak yeşil tonu */
+}
+
+.veteriner button,
+.hasta button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 100px;
+    z-index: 2;
+    border: 1px solid transparent;
+    background-color: #a233ff;
+    color: #ffffff;
+    transition: background-color 0.15s, border 0.15s, opacity 0.15s, color 0.15s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.veteriner button:hover,
+.hasta button:hover {
+    opacity: 1;
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);
+    border-color: black;
+    background-color: rgb(246, 56, 255);
+    color: rgba(26, 23, 23, 0.62);
+}
+.veteriner button :active
+{
+
+}

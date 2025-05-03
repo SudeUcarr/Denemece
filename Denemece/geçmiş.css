@@ -1,0 +1,82 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    padding: 40px 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+    background: linear-gradient(to bottom right, #b2ebf2, #00796b);
+    border: 2px solid #004d40; /* BORDER EKLENDİ */
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.card ul {
+    list-style-type: none;
+    text-align: left;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.card ul li {
+    background: #f1f8e9;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-left: 4px solid #80cbc4;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.card ul li:last-child {
+    margin-bottom: 0;
+}
+.card ul::-webkit-scrollbar {
+    width: 6px;
+}
+.card ul::-webkit-scrollbar-thumb {
+    background-color: #80cbc4;
+    border-radius: 6px;
+}
+

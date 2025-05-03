@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+.hasta-image {
+    width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kullanıcı-giriş {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #b2ebf2, #00796b);
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.kullanıcı-giriş h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.kullanıcı-giriş input {
+    border: 1px solid #ccc;
+    background: #ffffff;
+    padding: 18px 20px;
+    margin: 12px 0;
+    border-radius: 12px;
+    width: 500px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.kullanıcı-giriş input:focus {
+    border-color: #ab37f2;
+    background-color: #f9f9f9;
+    outline: none;
+    box-shadow: 0 0 6px rgba(171, 55, 242, 0.4);
+}
+
+.kullanıcı-giriş button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00796b;
+    color: white;
+    width: 300px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.kullanıcı-giriş button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+.kullanıcı-giriş button:active {
+    transform: scale(1);
+}
+
+.kayit-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.kayit-link span {
+    margin-right: 8px;
+}
+
+.kayit-link a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.kayit-link a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.kayit-link a:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ab37f2;
+}
+
+p {
+    color: white;
+    font-size: 44px;
+    margin-bottom: 44px;
+}

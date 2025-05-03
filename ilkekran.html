@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Veteriner Uygulaması Giriş</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh;
+        }
+
+        .left-panel {
+            background: linear-gradient(to bottom right, #b2ebf2, #00796b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .left-panel h1 {
+            border: 3px solid white;
+            padding: 20px;
+            border-radius: 12px;
+            color: #eafaf3;
+            font-size: 2.5rem;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .right-panel {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .login-options {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-options h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-options button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-options button:hover {
+            background-color: #004d40;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .left-panel, .right-panel {
+                height: 50vh;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="left-panel">
+        <h1>Veteriner Uygulamasına<br>Hoş Geldiniz</h1>
+    </div>
+    <div class="right-panel">
+        <div class="login-options">
+            <h2>Lütfen Giriş Türünüzü Seçin</h2>
+            <button onclick="alert('Veteriner girişi seçildi')">Veteriner Girişi</button>
+            <button onclick="alert('Hasta sahibi girişi seçildi')">Hasta Sahibi Girişi</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
